@@ -1,5 +1,6 @@
 import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
+import { Routes } from "../routes";
 
 export function App(): React.JSX.Element {
   return (
@@ -7,10 +8,7 @@ export function App(): React.JSX.Element {
       <Sidebar />
       <div className="flex-1 flex flex-col max-h-screen">
         <Header />
-
-        <main className="flex-1 flex items-center justify-center text-rotion-400">
-          Select or create a document
-        </main>
+        <Routes />
       </div>
     </div>
   );
